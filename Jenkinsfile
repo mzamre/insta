@@ -14,4 +14,13 @@ pipeline {
 		   steps {
 		sh 'cp target/insta.war /home/mohit/Downloads/apache-tomcat-9.0.89/webapps'
 			}}	
+		stage('Docker build'){
+		    steps {
+			sh 'docker build -t mohitzamre/pipelineimage1 .'
+			}}
+			stage('Container creation'){
+		    steps {
+			sh 'docker run -it -d --name=container-pipeline mohitzamre/pipelineimage1 /bin/bash'
+			}}	
+		
 }}
