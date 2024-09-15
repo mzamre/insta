@@ -16,7 +16,7 @@ pipeline {
 			}}	
 		stage('Docker build'){
 		    steps {
-			sh 'pwd'
+			sh 'docker build -t swapnilhub/pipelineimage1 -f /home/mohit/Downloads .'
 			}}
 			
 }}
