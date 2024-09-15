@@ -16,11 +16,11 @@ pipeline {
 			}}	
 		stage('Docker build'){
 		    steps {
-			sh '/home/mohit/Downloads/docker build -t mohitzamre/pipelineimage1'
+			sh '/home/mohit/Downloads/ docker build -t mohitzamre/pipelineimage1'
 			}}
 			stage('Container creation'){
 		    steps {
-			sh '/home/mohit/Downloads/docker run -it -d --name=container-pipeline mohitzamre/pipelineimage1 /bin/bash'
+			sh '/home/mohit/Downloads/ docker run -it -d --name=container-pipeline mohitzamre/pipelineimage1 /bin/bash'
 			}}	
 		
 }}
