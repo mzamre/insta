@@ -16,7 +16,7 @@ pipeline {
 			}}	
 		stage('Docker build'){
 		    steps {
-			sh '/home/mohit/Downloads/ docker build -t mohitzamre/pipelineimage1'
+			sh '/home/mohit/Downloads/ docker build -t mohitzamre/pipelineimage1 .'
 			}}
 			
 }}
