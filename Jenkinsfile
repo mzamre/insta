@@ -16,7 +16,7 @@ pipeline {
 			}}	
 		stage('Docker build'){
 		    steps {
-			sh 'ls'
+			sh 'pwd'
 			}}
 			
 }}
