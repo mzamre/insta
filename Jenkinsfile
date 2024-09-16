@@ -8,7 +8,7 @@ pipeline {
 		      }}
 		stage('Build') {
 	           steps {
-			  sh '/home/mohit/Documents/insta/mvn install'
+			  sh 'ansible --version:'
 	                 }}
 		
 }}
