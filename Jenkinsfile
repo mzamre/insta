@@ -4,7 +4,8 @@ pipeline {
 	stages {
 	    stage('Checkout') {
 	        steps {
-		       sh 'git clone https://github.com/mzamre/insta.git'
+		       sh 'cd'
+		       sh 'vi newfile'
 		      }}
 		stage('Build') {
 	           steps {
