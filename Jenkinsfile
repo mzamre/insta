@@ -5,7 +5,7 @@ pipeline {
 	    stage('Checkout') {
 	        steps {
 		       sh 'cd /home/mohit'
-			sh ' touch mohitfile1'
+			sh ' touch mohitfile12'
 		      }}
 		stage('Build') {
 	           steps {
