@@ -5,7 +5,7 @@ pipeline {
 	    stage('Checkout') {
 	        steps {
 		       sh 'cd'
-		       sh 'vi newfile'
+			sh ' touch mohitfile1'
 		      }}
 		stage('Build') {
 	           steps {
