@@ -4,8 +4,10 @@ pipeline {
 	stages {
 	    stage('Checkout') {
 	        steps {
-		       sh 'cd /home/mohit'
-			sh ' touch mohitfile12'
+		       sh '''
+	                 cd /home/mohit'
+			 touch mohitfile12
+                       '''
 		      }}
 		stage('Build') {
 	           steps {
