@@ -4,7 +4,7 @@ pipeline {
 	stages {
 	    stage('Checkout') {
 	        steps {
-		       checkout scm
+		       sh 'git clone https://github.com/mzamre/insta.git'
 		      }}
 		stage('Build') {
 	           steps {
